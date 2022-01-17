@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container-grid cabecalho">
+        <form>
+            <input type="text">
+            <button>Pesquisar</button>
+        </form>
+        <a href="index.html"> <img class="logo" src="img/Rectangle 15.png" alt="Logo da aplicação"> </a>
+        <nav class="menu">
+            <a href="">Jogos</a>
+            <a href="">Serviços</a>
+            <a href="">Notícias</a>
+            <a href="">Loja</a>
+            <a href="">Suporte</a>
+            <a href="">Login</a>
+        </nav>
+        <form method="get" action="?">
+            
+            <label>Nome: </label>
+            <input type="text" name="campoNome" placeholder="Insira aqui o seu nome...">
+            <br>
+            
+            <label>Idade: </label>
+            <input type="number" name="campoIdade" min="0" max="115">
+            <br>
+
+            <label for="pass">Password (8 caracteres no mínimo):</label>
+            <input type="password" id="pass" name="password" minlength="8" required>
+            <br>
+            
+            <input type="reset" value="Limpar os dados">
+            <input type="submit" value="Enviar os dados">
+        </form>
+    </div>
+    </header>
+    <section class="banner">
+
+    </section>
+</body>
+</html>
