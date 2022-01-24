@@ -1,28 +1,37 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html lang="Pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/Favicon.svg" type="image/x-icon">
+    <script src="js/scripts.js" defer></script>
+    <title>GameMania</title>
 </head>
 <body>
-    <header>
-        <div class="container-grid cabecalho">
-        <form>
-            <input type="text">
-            <button>Pesquisar</button>
-        </form>
-        <a href="index.html"> <img class="logo" src="img/Rectangle 15.png" alt="Logo da aplicação"> </a>
-        <nav class="menu">
-            <a href="">Jogos</a>
-            <a href="">Serviços</a>
-            <a href="">Notícias</a>
-            <a href="">Loja</a>
-            <a href="">Suporte</a>
-            <a href="">Login</a>
-        </nav>
+    <header id="header-maestro fixed-top">
+        <section id="barra-1">
+            <div class="logo"><a href="index.html"><img src="img/Rectangle 15.png" width="280px" alt="GameMania"></a></div>
+            <form>
+                <input type="text">
+                <button>Pesquisar</button>
+            </form>
+        </section>
+        <section id="barra-2" class="gradientez">
+            <nav class="barra-menu">
+                <div class="opcmenu"><a href="jogos.html">Jogos</a></div>
+                <div class="opcmenu"><a href="servicos.html">Serviços</a></div>
+                <div class="opcmenu"><a href="noticias.html">Notícias</a></div>
+                <div class="opcmenu"><a href="loja.html">Loja</a></div>
+                <div class="opcmenu"><a href="suporte.html">Suporte</a></div>
+                <div class="opcmenu"><a href="login.html">Login</a></div> 
+            </nav>
+        </section>
+    </header>
+    <div id="slider">
+        <a href="index.html"><img src="img/Rectangle 4.png"Foto01" class="atual"></a>
+    </div>
+    <main>
         <form method="get" action="?">
             
             <label>Nome: </label>
@@ -40,10 +49,41 @@
             <input type="reset" value="Limpar os dados">
             <input type="submit" value="Enviar os dados">
         </form>
-    </div>
-    </header>
-    <section class="banner">
-
-    </section>
+    </main>
+    <footer>
+        <section>
+            <div id="conteiner-rodape">
+                <div class="fundo-atendimento gradientez">
+                    <div class="atendimento">
+                        <div class="organizador-rodape">
+                            <div class="texto-rodape">
+                                <h3>Horário de atendimento</h3>
+                                <p>Horário de atendimento:
+                                    08:00 às 20:00 -
+                                    Segunda a Sábado,
+                                    horário de Brasília
+                                    (exceto domingo e feriados)</p>
+                            </div>
+                        </div>
+                        <div class="organizador-rodape">
+                            <div class="texto-rodape">
+                                <p>(99) 4338-5189</p>
+                                <p>faleconosco@gamemania.com.br</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fundo-rodape">
+                    <div class="conteiner-rodape">
+                        <div class="rodape"><a href="">quem somos</a></div>
+                        <div class="rodape"><a href="">localização</a></div>
+                        <div class="rodape"><a href="">nossas lojas</a></div>
+                        <div class="rodape"><a href="">políticas de privacidade</a></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

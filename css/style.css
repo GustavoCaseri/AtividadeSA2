@@ -1,65 +1,199 @@
 
-* {
-    margin: 0%;
-    padding: 0%;
+*{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
-
-body {
-    background-color: blue;
+body{
+    background: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 800px
+}
+#conteudos{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-header {
-    height: 80px;
-    background-color: #1e1c21;
-}
-.container-grid {
-    width: 1200px;
-    margin: 0 auto;
+.gradientez{
+    background: rgb(255, 254, 254);
 }
 
-.link-menu-barras {
-    width: 30px;
-    display: none;
+.titulos-conteudos{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    flex-basis: 100%;
+    margin-top: 20px;
+    margin-bottom: 05px;
+    padding: 10px;
+    font-size: 20px;
 }
 
-.logo {
-    width: 250px;
-    margin-top: 5px;
-    margin-left: 0px;
-}
-.cabecalho {
+#barra-1{
     display: flex;
     justify-content: space-between;
+}
+
+.logo{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+
+#barra-2{
+    width: 100%;
+    height: 45px;
+    display: flex;
     align-items: center;
-    height: 100%;
+}
+.barra-menu{
+    background: black;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 800px;
+}
+.opcmenu a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.opcmenu a:hover{
+    background: white;
+    color: black;
 }
 
-.menu {
-    width: 500px;
+/*BANNER*/
+#slider {
+    max-width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+#slider img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 800ms;
+}
+
+#slider img.atual { 
+    opacity: 1;
+}
+
+#ofertas{
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+.produto{
+    width: 190px;
+    height: 420px;
+    background: #585858;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-
-.menu a {
-    color: white;
+.fotoproduto{
+    border-radius: 5px;
+    flex-basis: 180px;
+}
+.nomeproduto a{
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "Roboto";
+    font-weight: bolder;
+    color: white;
+    flex-basis: 190px;
+}
+.descricao{
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    flex-basis: 180px;
+}
+.preco a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
 }
 
-.menu a:hover {
-    text-decoration: underline;
+
+.organizador-rodape{
+    display: flex;
+    align-items: center;
+}
+.fundo-atendimento{
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.atendimento{
+    width: 100%;
+    background: black;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.texto-rodape{
+    color: white;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-basis: 200px;
 }
 
-.banner {
-    height: 600px;
-    background-image: url(../img/Rectangle\ 4.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+.fundo-rodape{
+    background: #242424;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.conteiner-rodape{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.rodape a{
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
-@media screen and (max-widt: 768px) {
-
-}
